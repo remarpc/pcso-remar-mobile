@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace pcso_remar.ViewModel
 {
@@ -6,5 +7,11 @@ namespace pcso_remar.ViewModel
     {
         [ObservableProperty]
         private string username;
+
+        [ICommand]
+        public void GoToHome()
+        {
+            Shell.Current.GoToAsync("//Tabs");
+        }
     }
 }

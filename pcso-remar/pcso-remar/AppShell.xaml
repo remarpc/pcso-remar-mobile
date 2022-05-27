@@ -6,21 +6,19 @@
              Routing.Route="Root"
              Title="Root">
 
-    <!--TabBar
+    <TabBar
         Route="Tabs">
         <Tab
             Title="Home"
             Icon="home.png">
-            <ShellContent 
-                ContentTemplate="{DataTemplate views:HomeMoviesPage}"/>
+            <ShellContent ContentTemplate="{DataTemplate views:HomePage}"/>
         </Tab>
         <Tab 
             Title="Profile"
-            Icon="person.png">
-            <ShellContent 
-                ContentTemplate="{DataTemplate views:ProfilePage}" />
+            Icon="profile.png">
+            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}" />
         </Tab>
-    </TabBar-->
+    </TabBar>
 
     <TabBar
         Shell.TabBarIsVisible="False"
@@ -28,8 +26,7 @@
         <Tab
             Title="Home"
             Icon="home.png">
-            <ShellContent 
-                ContentTemplate="{DataTemplate views:LoginPage}"/>
+            <ShellContent ContentTemplate="{DataTemplate views:LoginPage}"/>
         </Tab>
     </TabBar>
 </Shell>
